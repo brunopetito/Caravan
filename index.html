@@ -13,6 +13,41 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <!-- MODAL -->
+
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="loginEmail" >
+            
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="loginPassword">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fECHA MODAL -->
+
+
+
+
+
     <nav
       class="navbar navbar-expand-md navbar-light bg-light py-3 fixed-top box-shadow p-4 "
     >
@@ -30,7 +65,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav  me-2">
 
             <li class="nav-item dropdown">
@@ -59,11 +94,11 @@
               <a class="nav-link" href="#">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin" href="#">Login</a>
             </li>
 
-            <li class="nav-item px-3">
-              <a class="btn btn-outline-primary ml-md-2 " href="inscricao.html"
+            <li class="nav-item px-md-2 px-0">
+              <a class="btn btn-outline-primary ml-md-2 "   href="inscricao.html"
                 >Inscreva-se</a
               >
             </li>
@@ -255,7 +290,6 @@
       </blockquote>
     </section>
 
-
     <section class="container">
 
       <div class="my-5 text-center">
@@ -379,9 +413,7 @@
              </div>
         </div>
       </div>
-      
     </footer>
-
     <div class="bg-primary text-center text-white py-2">
       <p class="mb-0">Caravan © 2022. Alguns direitos reservados. </p>
 
