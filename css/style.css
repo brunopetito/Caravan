@@ -18,6 +18,9 @@ body {
   background: url('../img/bg-quote.jpg') center center;
   background-size: cover;
 }
+.a-unlined {
+  text-decoration-line: none;
+}
 
 @media (max-width: 767px) {
   #home-quote .display-4 {
